@@ -32,7 +32,7 @@ $categories = mysqli_query($connection, "SELECT * FROM `articles_categories`");
               while( $cat = mysqli_fetch_assoc($categories))
               { ?>
               
-                <li><a href="/articles.php?id=<?php echo $cat ['id']; ?>"><?php echo $cat['title']; ?></a></li>
+                <li><a href="/articles.php?category=<?php echo $cat ['id']; ?>"><?php echo $cat['title']; ?></a></li>
 
               <?php }; ?>
             
